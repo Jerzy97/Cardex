@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Start Rosbag -->
+  <node pkg="rosbag" type="play" name="player" output="screen" args="--loop --rate 1 /home/georg/ROS/ros_bags/uvc.bag"/>
+
+  <!-- Convert Disparity Map to TYPE_16UC1 -->
+  <node name="process_disparity_map" pkg="process_disparity_map" type="process_disparity_map_node"/>
+
+</launch>
