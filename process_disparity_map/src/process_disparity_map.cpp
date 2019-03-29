@@ -222,6 +222,9 @@ void DisparityProc::imageCb(const sensor_msgs::ImageConstPtr& msg)
 	Interpoplate the two parabolas & evaluate on a fine mesh
      -------------------------------------------------------------------------------------------*/
 /*
+ *  depricated...
+ *
+
   Parabola left(x_points[0], y_points[0], x_points[1], y_points[1]);
   Parabola right(x_points[2], y_points[2], x_points[1], y_points[1]);
 
